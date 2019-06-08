@@ -172,6 +172,10 @@ LOGGING = {
 # Cors
 CORS_ORIGIN_ALLOW_ALL = True
 
+# Settings according to https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
+CSRF_COOKIE_SECURE = True
+SESSION_COOKIE_SECURE = True
+
 # Make an `etesync_site_settings` module available to override settings.
 try:
     from etesync_site_settings import *
